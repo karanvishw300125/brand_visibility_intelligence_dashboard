@@ -397,8 +397,7 @@ Brand Visibility Intelligence Dashboard/
 ├── cleaned_dataset.csv
 ├── dashboard_queries.sql
 ├── requirements.txt
-├── project_report.md
-└── screenshots/
+└── project_report.md
 ```
 
 ---
