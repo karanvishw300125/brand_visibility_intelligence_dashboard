@@ -174,7 +174,7 @@ The cleaned and feature-engineered data was stored in a SQLite database.
 ### Database
 
 ```text
-brand_visibility.db
+brand_visibility_data.db
 ```
 
 ### Table
@@ -397,7 +397,8 @@ Brand Visibility Intelligence Dashboard/
 ├── cleaned_dataset.csv
 ├── dashboard_queries.sql
 ├── requirements.txt
-└── project_report.md
+├── project_report.md
+└── Screenshots/
 ```
 
 ---
