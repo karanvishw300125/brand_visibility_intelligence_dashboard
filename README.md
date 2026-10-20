@@ -148,22 +148,28 @@ Products were categorized into:
 
 ### Visibility Score
 
-A visibility score was calculated using search position.
+A visibility score was calculated using the product's search rank. A higher score represents a better rank.
 
 ```text
-Visibility Score = ((41 - Position) / 40) × 100
+Visibility Score = (1 / rank) × 100
 ```
 
-Therefore:
+Examples:
 
-* Position 1 → Visibility Score 100
-* Position 10 → Visibility Score 77.5
-* Position 20 → Visibility Score 52.5
-* Position 40 → Visibility Score 2.5
+Rank 1 → Visibility Score 100
+Rank 2 → Visibility Score 50
+Rank 5 → Visibility Score 20
+Rank 10 → Visibility Score 10
+Rank 20 → Visibility Score 5
+Rank 40 → Visibility Score 2.5
 
-### Top 10 Flag
+### Top 10 Products
 
-Products appearing in positions 1–10 were identified as top-ranking products.
+Products with a rank between 1 and 10 were identified as top-ranking products.
+
+This creates a Boolean column:
+True — product rank is 10 or better.
+False — product rank is greater than 10.
 
 ---
 
@@ -232,6 +238,7 @@ The interactive dashboard contains six major sections.
 * Average Price
 * Average Rating
 * Total Reviews
+* Average Visibility Score
 
 ### Charts
 
@@ -250,9 +257,9 @@ The interactive dashboard contains six major sections.
 
 ### Charts
 
-* Brand vs Product Count
-* Brand vs Average Rating
-* Top Brands in Top 10 Positions
+* Top Brands by Product Count
+* Average Rating by Brand
+* Brands Appearing in Top 10
 
 ---
 
@@ -261,7 +268,7 @@ The interactive dashboard contains six major sections.
 ### KPIs
 
 * Average Price
-* Maximum Price
+* Highest Price
 * Discounted Products Percentage
 
 ### Charts
@@ -281,9 +288,9 @@ The interactive dashboard contains six major sections.
 
 ### Charts
 
-* Platform vs Product Count
-* Platform vs Average Price
-* Platform vs Average Rating
+* Products per Platform
+* Average Price per Platform
+* Average Rating per Platform
 
 ---
 
